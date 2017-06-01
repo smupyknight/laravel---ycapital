@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- If you delete this meta tag, Half Life 3 will never be released. -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ALARES</title>
+
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/email.css" />
+<style>
+#img-out canvas{ /*torn paper border*/
+    border-style:solid;
+		border-image: url(assets/frontend/images/torn.png) 50 0 90 0 repeat;
+		-webkit-border-image: url(assets/frontend/images/torn.png) 50 0 90 0 repeat;
+		-moz-border-image: url(assets/frontend/images/torn.png) 50 0 90 0 repeat;
+		border-image-slice: 50 0 90 0 fill;
+		border-image-width: 20 0 20 0;
+		padding-top : 10px;
+}
+</style>
+</head>
+ 
+<body bgcolor="#FFFFFF" class="client_portal_home_page">
+<!-- HEADER -->
+<div class="head-wrap" style="background-color:#6697c8">
+
+<div class="content email-header">
+		<img src="assets/frontend/images/alares-logo.png" />
+		<div class="pull-right">
+			<h5>Your Daily Summary</h5><h5>Monday, 13 July 2016</h5>
+		</div>
+</div>
+</div><!-- /HEADER -->
+
+<!-- BODY -->
+<table class="body-wrap">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+			<div class="email-sub-header">
+				<img src="assets/frontend/images/icon2.png" height="60"/>
+			</div>
+			<div class="content">
+			<table>
+				<tr>
+					<td>
+						<h3>Hi John,</h3>
+						<p class="lead">Here is your <strong>ALARES</strong> court list daily summary. To view complete list <a href="#">click here</a></p>
+						<p>
+							Remember you can purchase court lists all states <a href="#">here</a>.
+						</p>
+            <div class="container main_container">
+                <div class="col-xs-12 filter_tabs">
+                    <div id="main_table" style="display:none;margin-top:30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"->QLD</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">NSW</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">VIC</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">FED</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content custom_tab_content">
+                            <div role="tabpanel" class="tab-pane custom_tab_pane col-xs-12 active" id="home">
+                                <span>Queensland New Civil Court Proceedings</span>
+                                <table id="example1" class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="no-sort"></th>
+                                            <th>Data Filed</th>
+                                            <th>Court</th>
+                                            <th>Case Type</th>
+                                            <th>Plantiff</th>
+                                            <th>Defendant</th>
+                                            <th>Next Event</th>
+                                            <th>Plantiff Lawyer</th>
+                                            <th>Defendant Lawyer</th>
+                                            <th>Case ID</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordionOne" class="clickable odd">
+                                            <td class="collapsed_icon"> </td>
+                                            <td>30/01/2016</td>
+                                            <td>QLD Supr, Brisbane</td>
+                                            <td>Winding Up</td>
+                                            <td>ABC Company Pty Ltd</td>
+                                            <td>DEF Company Limited</td>
+                                            <td>12/02/2016</td>
+                                            <td>123 Lawyers</td>
+                                            <td>456 Lawyers</td>
+                                            <td>123456</td>
+                                            <td>view</td>
+                                        </tr>
+                                        <tr id="accordionOne" class="collapse custom-accordion">
+                                            <td colspan="12">
+                                                <div class="boxed-row">
+                                                    <h4 class="text-left sub_table_title">Applications</h4>
+                                                    <table id="" class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionOne" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Hearings
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionOne" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    <table class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Time</th>
+                                                                                <th>Reason</th>
+                                                                                <th>Officer</th>
+                                                                                <th>Court Room</th>
+                                                                                <th>Court Name</th>
+                                                                                <th>Court Phone</th>
+                                                                                <th>Court Address</th>
+                                                                                <th>Court Suburb</th>
+                                                                                <th>Type</th>
+                                                                                <th>List #</th>
+                                                                                <th>Outcome</th>
+                                                                                <th>Orders Filename</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr  class="even">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr  class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionTwo" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Documents
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionTwo" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    <table class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Time</th>
+                                                                                <th>Reason</th>
+                                                                                <th>Officer</th>
+                                                                                <th>Court Room</th>
+                                                                                <th>Court Name</th>
+                                                                                <th>Court Phone</th>
+                                                                                <th>Court Address</th>
+                                                                                <th>Court Suburb</th>
+                                                                                <th>Type</th>
+                                                                                <th>List #</th>
+                                                                                <th>Outcome</th>
+                                                                                <th>Orders Filename</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr  class="even">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr  class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionThree" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Parties
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionThree" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    Panel 3 content
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionFour" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Materials
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionFour" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    Panel 4 content
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target="#accordionTwo" class="clickable even">
+                                            <td class="collapsed_icon"></td>
+                                            <td>06/01/2016</td>
+                                            <td>QLD Supr, Brisbane</td>
+                                            <td>Winding Up</td>
+                                            <td>ABC Company Pty Ltd</td>
+                                            <td>DEF Company Limited</td>
+                                            <td>12/02/2016</td>
+                                            <td>123 Lawyers</td>
+                                            <td>456 Lawyers</td>
+                                            <td>123456</td>
+                                            <td>view</td>
+                                        </tr>
+                                        <tr id="accordionTwo" class="collapse custom-accordion">
+                                            <td colspan="12">
+                                                <div class="boxed-row">
+                                                    <h4 class="text-left sub_table_title">Applications</h4>
+                                                    <table id="" class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionOne1" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Hearings
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionOne1" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    <table class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Time</th>
+                                                                                <th>Reason</th>
+                                                                                <th>Officer</th>
+                                                                                <th>Court Room</th>
+                                                                                <th>Court Name</th>
+                                                                                <th>Court Phone</th>
+                                                                                <th>Court Address</th>
+                                                                                <th>Court Suburb</th>
+                                                                                <th>Type</th>
+                                                                                <th>List #</th>
+                                                                                <th>Outcome</th>
+                                                                                <th>Orders Filename</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr class="even">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionTwo1" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Documents
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionTwo1" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    <table class="table dt-responsive table-bordered custom_data_table" cellspacing="0" width="100%">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Time</th>
+                                                                                <th>Reason</th>
+                                                                                <th>Officer</th>
+                                                                                <th>Court Room</th>
+                                                                                <th>Court Name</th>
+                                                                                <th>Court Phone</th>
+                                                                                <th>Court Address</th>
+                                                                                <th>Court Suburb</th>
+                                                                                <th>Type</th>
+                                                                                <th>List #</th>
+                                                                                <th>Outcome</th>
+                                                                                <th>Orders Filename</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr class="even">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                            <tr class="odd">
+                                                                                <td>06/01/2016</td>
+                                                                                <td>22:30:00</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne Magistrates' Court </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td>Melbourne</td>
+                                                                                <td>Arbitation</td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionThree1" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Parties
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionThree1" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    Panel 3 content
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-toggle="collapse" data-target="#subAccordionFour1" class="clickable">
+                                                                <td colspan="13" class="text-left sub_panel_title">
+                                                                    <i class="sub_panel_control">+</i> Materials
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="subAccordionFour1" class="collapse">
+                                                                <td class="inner_table_container">
+                                                                    Panel 4 content
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target="#accordionThree" class="clickable odd">
+                                            <td class="collapsed_icon"></td>
+                                            <td>06/01/2016</td>
+                                            <td>QLD Supr, Brisbane</td>
+                                            <td>Winding Up</td>
+                                            <td>ABC Company Pty Ltd</td>
+                                            <td>DEF Company Limited</td>
+                                            <td>12/02/2016</td>
+                                            <td>123 Lawyers</td>
+                                            <td>456 Lawyers</td>
+                                            <td>123456</td>
+                                            <td>view</td>
+                                        </tr>
+                                        <tr id="accordionThree" class="collapse custom-accordion">
+                                            <td colspan="12">
+                                                <div class="boxed-row"> panel content</div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target="#accordionFour" class="clickable even">
+                                            <td class="collapsed_icon"></td>
+                                            <td>06/01/2016</td>
+                                            <td>QLD Supr, Brisbane</td>
+                                            <td>Winding Up</td>
+                                            <td>ABC Company Pty Ltd</td>
+                                            <td>DEF Company Limited</td>
+                                            <td>12/02/2016</td>
+                                            <td>123 Lawyers</td>
+                                            <td>456 Lawyers</td>
+                                            <td>123456</td>
+                                            <td>view</td>
+                                        </tr>
+                                        
+                                        <tr id="accordionSeven" class="collapse custom-accordion">
+                                            <td colspan="12">
+                                                <div class="boxed-row"> panel content</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>  
+                            <div role="tabpanel" class="tab-pane custom_tab_pane col-xs-12" id="profile">
+                                panel content
+                            </div>  
+                            <div role="tabpanel" class="tab-pane custom_tab_pane col-xs-12" id="messages">
+                                panel content
+                            </div>
+                            <div role="tabpanel" class="tab-pane custom_tab_pane col-xs-12" id="settings">
+                                panel content
+                            </div>                       
+                        </div>
+                    </div>
+										<div id="img-out" style="margin-top:30px;"></div>
+										<div align="center" style="margin-top:30px;">
+											<p>To view today's complete list <a href="#">click here</a></p>
+										</div>	
+                </div>	
+            </div>		
+						
+					</td>
+				</tr>
+			</table>
+			</div><!-- /content -->
+									
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+<!-- FOOTER -->
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+				<!-- content -->
+				<div class="content">
+				<table>
+				<tr>
+					<td align="center">
+						<p>You are receiving this email beacuase of reasons.</p>
+						<p>To Unsubscribe click <a href="#">here</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<p>ALARES address</p>
+						<p>Contact Details</p>
+					</td>
+				</tr>
+			</table>
+				</div><!-- /content -->
+				
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /FOOTER -->
+
+	<script type="text/javascript" src="assets/frontend/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="assets/frontend/js/html2canvas.js"></script>
+	<script type="text/javascript">
+
+		var elem = $('#main_table');
+				if(!elem.is(":visible")){
+						elem.show();elem.fadeIn(1);elem.fadeOut(1);
+				 }
+
+		html2canvas(elem, {
+				onrendered: function(canvas) {
+						$("#img-out").html(canvas);
+						elem.remove();
+				}
+		});
+		
+	</script>
+</body>
+</html> 
